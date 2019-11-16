@@ -12,6 +12,9 @@
     "test:run": "cypress run",
     "test:ci": "concurrently -r -k -s first \"npm run test:start\" \"npm run test:run\" "
   },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": "cypress/support/step_definitions"
+  },
   "private": true,
   "dependencies": {
     "@angular/animations": "~8.2.13",
@@ -37,6 +40,8 @@
     "codelyzer": "^5.0.0",
     "concurrently": "^5.0.0",
     "cypress": "^3.6.1",
+    "cypress-cucumber-preprocessor": "^1.16.2",
+    "firebase-tools": "^7.7.0",
     "jasmine-core": "~3.4.0",
     "jasmine-spec-reporter": "~4.2.1",
     "karma": "~4.1.0",
