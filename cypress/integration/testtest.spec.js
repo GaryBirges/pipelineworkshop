@@ -8,3 +8,4 @@ context("QuickStart", ()=>{
         cy.get('.content pre').contains("ng generate component");
     })
 })
+

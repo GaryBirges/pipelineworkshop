@@ -13,7 +13,7 @@
     "test:ci": "concurrently -r -k -s first \"npm run test:start\" \"npm run test:run\" "
   },
   "cypress-cucumber-preprocessor": {
-    "nonGlobalStepDefinitions": "cypress/support/step_definitions"
+    "nonGlobalStepDefinitions": "cypress/step_definitions"
   },
   "private": true,
   "dependencies": {

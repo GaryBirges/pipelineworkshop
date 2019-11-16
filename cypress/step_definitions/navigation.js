@@ -1,7 +1,5 @@
 import { Given } from 'cypress-cucumber-preprocessor/steps'
-import { createYield } from 'typescript'
 
-Given(/^open the website$/, ()=>{
+Given(/^the site is open$/, () => {
     cy.visit('/');
-    
-})
+});
